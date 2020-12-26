@@ -1,0 +1,11 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: AWS CloudFormation Sample Template For EC2 Instance
+Resources:
+  WebServer:
+    Type: 'AWS::EC2::Instance'
+    Properties: 
+      ImageId: ami-0a9d27a9f4f5c0efc
+      InstanceType: t2.micro
+      KeyName: Devops
+      SecurityGroupIds: 
+       - sg-0950bf7278ec4c811
